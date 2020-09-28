@@ -11,8 +11,12 @@ class Song < ActiveRecord::Base
     # when this method is called it should assign the song's artist to Drake
     # Drake doesn't exist in the database as an artist yet, so you'll have to create a record
     # Hint: you won't want to create an artist record every time this method is called, only if an Drake is *not found*
+<<<<<<< HEAD
      self.artist =  Artist.find_or_create_by( name: 'Drake') 
       
+=======
+     a = Song.find_or_create_by(artist: 'Drake') 
+>>>>>>> 0df8dca515974f2fec98b59271f71e61db66ad89
 
 end
 end
